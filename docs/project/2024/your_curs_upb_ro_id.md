@@ -2,7 +2,7 @@
 
 :::info 
 
-**Author**: Student Name \
+**Author**: El-Ghoul Layla \
 **GitHub Project Link**: link_to_github
 
 :::
