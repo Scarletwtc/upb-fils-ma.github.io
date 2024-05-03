@@ -16,11 +16,11 @@ I picked this project because it addresses this concern. My project focuses on m
 
 ## Architecture 
 ![A prototype of architecture](Architecture.png)
-![Architecture Scheme] (Architecture2.png)
+![Architecture Scheme](Architecture2.png)
 
 This project utilizes a Raspberry Pi Pico W to create a smart parking system, housed within a cardboard box. The system features two floors, with various sensors and components managing the parking spaces.
 
-### Components Overview
+#### Components Overview
 
 #### First Floor
 
@@ -28,13 +28,14 @@ This project utilizes a Raspberry Pi Pico W to create a smart parking system, ho
   - **3 parking spaces**, each equipped with:
     - **Green LED**: Indicates the space is available.
     - **Red LED**: Indicates the space is occupied.
+    - **Infrared Sensor**: Detects presence of cars.
 
 - **Gates**:
   - **Entrance Gate**: Controlled by **Servomotor 1** (connected to GPIO pin 1).
   - **Exit Gate**: Controlled by **Servomotor 2** (connected to GPIO pin 2).
 
 - **Sensors**:
-  - **PIR Sensors**: 5 sensors (PIR 1 to PIR 5) monitoring vehicle movements, connected to GPIO pins 6-10. 3 senzors indicate if a car is parked in a parking space, while 2 of them are used to indicate cars for gates (servomotors) to open.
+  - **Infraared Sensors**: 5 sensors (PIR 1 to PIR 5) monitoring vehicle movements, connected to GPIO pins 6-10. 3 senzors indicate if a car is parked in a parking space, while 2 of them are used to indicate cars for gates (servomotors) to open.
   - **IR Flame Sensor**: Detects fire and triggers a buzzer, connected to GPIO pin 3.
 
 #### Second Floor
@@ -47,7 +48,7 @@ This project utilizes a Raspberry Pi Pico W to create a smart parking system, ho
     - **CS**: GPIO 17
   - **LED Light**: Indicates access status.
 
-### Connectivity
+#### Connectivity
 
 - **Infrared Sensors**: Connected to the Raspberry Pi Pico W's GPIO pins, sending signals about vehicle presence.
 - **Servo Motors**: Controlled by pins on the Pico W.
@@ -57,7 +58,7 @@ This project utilizes a Raspberry Pi Pico W to create a smart parking system, ho
 - **Active buzzer**: the buzzer that gets activated in case of a fire.
   
 
-### Physical Layout
+#### Physical Layout
 
 - **Cardboard Box**: Houses the system, with cutouts for each component:
   - **First Floor**: 3 parking spaces, entrance, and exit.
@@ -121,4 +122,5 @@ In kicad2, everything is connected properly.
 ## Links
 
 1. [PM projects 2023](https://ocw.cs.pub.ro/courses/pm/prj2023)
+2. [Car Parking System](https://www.youtube.com/watch?v=8XOsXdNOa4g&ab_channel=svsembedded)
 
